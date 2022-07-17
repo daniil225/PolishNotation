@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-#include "Pair.h"
+#include "../Libs/Pair.h"
 
 void InitPair(Pair *pair, String *str, int priority)
 {

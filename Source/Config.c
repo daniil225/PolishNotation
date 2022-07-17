@@ -1,5 +1,5 @@
 #include <stdlib.h>
-#include "Dictionary.h"
+#include "../Libs/Dictionary.h"
 
 
 Dictonary* DefaultConfigDictionary()

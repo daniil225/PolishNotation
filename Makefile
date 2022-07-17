@@ -8,17 +8,17 @@ res: main.o String.o Pair.o Dictionary.o Config.o Stack.a
 main.o: main.c
 	gcc -c main.c
 
-String.o: String.c
-	gcc -c String.c
+String.o: Source/String.c
+	gcc -c Source/String.c
 
-Pair.o: Pair.c
-	gcc -c Pair.c
+Pair.o: Source/Pair.c
+	gcc -c Source/Pair.c
 
-Dictionary.o: Dictionary.c
-	gcc -c Dictionary.c
+Dictionary.o: Source/Dictionary.c
+	gcc -c Source/Dictionary.c
 
-Config.o: Config.c
-	gcc -c Config.c
+Config.o: Source/Config.c
+	gcc -c Source/Config.c
 
 
 
@@ -37,5 +37,5 @@ Stack.a: Stack_as_template.o Stack.o
 
 
 clean:
-	rm *.o res
+	rm *.o *.a res
 

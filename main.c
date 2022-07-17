@@ -1,21 +1,21 @@
 #include<stdio.h>
 #include<stdlib.h>
 
-#include "Config.h"
+#include "Libs/Config.h"
 #include "Stack/Stack.h"
 
 int main()
 {
-    /*
+    
     String formula;  // Исходная формула
-    String res; // Формула преобразованная при помощи алгоритма Дейкстры
-    InitString(&res);
+    //String res; // Формула преобразованная при помощи алгоритма Дейкстры
+    //InitString(&res);
     InitString(&formula);
     Dictonary *OpertionsPriority = DefaultConfigDictionary(); // Задаем стартовую конфигурацию для операций
     
     ShowDict(OpertionsPriority);
     free(OpertionsPriority);
-*/
+
     
     TEMPLATE(Stack, double) stack;
 

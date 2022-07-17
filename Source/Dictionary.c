@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-#include "Dictionary.h"
+#include "../Libs/Dictionary.h"
 
 
 
