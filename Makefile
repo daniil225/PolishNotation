@@ -2,8 +2,8 @@
 
 all: res
 
-res: main.o String.o Pair.o Dictionary.o Config.o Stack.a
-	gcc -Wall -Werror -Wextra -o res main.o String.o Pair.o Dictionary.o Config.o -L. -lStack
+res: main.o String.o Pair.o Dictionary.o Config.o Parser.o Stack.a
+	gcc -Wall -Werror -Wextra -o res main.o String.o Pair.o Dictionary.o Config.o Parser.o -L. -lStack
 
 main.o: main.c
 	gcc -c main.c
@@ -21,6 +21,8 @@ Config.o: Source/Config.c
 	gcc -c Source/Config.c
 
 
+Parser.o: Parser/Parser.c
+	gcc -c Parser/Parser.c
 
 # Form Stack to static Lib
 Stack.o: Stack/Stack.c

@@ -7,6 +7,7 @@
 #endif
 
 #define T String
+#include "../Libs/String.h"
 #include "Stack_as_template.h"
 #ifdef T
 #undef T
